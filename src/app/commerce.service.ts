@@ -14,6 +14,6 @@ export class CommerceService {
 
   getProductDetails(): Observable<any> {
     console.log(environment.api_url + 'api/product');
-    return this.http.get<any>(environment.api_url + 'api/product');
+    return this.http.get<any>(environment.api_url + 'api/product/2');
   }
 }
