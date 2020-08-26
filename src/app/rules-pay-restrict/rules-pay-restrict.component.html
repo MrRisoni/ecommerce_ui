@@ -1,0 +1,21 @@
+<div class="d-flex" id="wrapper">
+
+  <app-sidebar></app-sidebar>
+
+  <table class="table table-striped table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Methods</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let rl of Rules">
+          <td>{{rl.id}}</td>
+          <td>{{rl.title}}</td>
+          <td>{{rl.methods}}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>

@@ -16,4 +16,16 @@ export class CommerceService {
     console.log(environment.api_url + 'api/product');
     return this.http.get<any>(environment.api_url + 'api/product/2');
   }
+
+  getPayRulesRestriction(): Observable<any> {
+    return this.http.get<any>(environment.api_url + 'api/restrict/rules');
+  }
+
+  getPayRulesRestrictionParameters(): Observable<any> {
+    return this.http.get<any>(environment.api_url + 'api/restrict/parameters');
+  }
+
+  getPayRulesRestrictionOperators(): Observable<any> {
+    return this.http.get<any>(environment.api_url + 'api/restrict/operators');
+  }
 }
