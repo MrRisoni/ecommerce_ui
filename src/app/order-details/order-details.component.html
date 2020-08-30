@@ -1,0 +1,110 @@
+<div class="row">
+  <div class="col-9 offset-1">
+
+    <div class="row">
+      <div class="col-8">
+        OrderId {{orderDetails.id}}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8">
+        TransactionId {{orderDetails.bankTransactionId}}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8">
+        createdAt {{orderDetails.createdAt}}
+      </div>
+    </div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Goods</th>
+        <th>Shipping</th>
+        <th>Fee</th>
+        <th>Total</th>
+        <th>Payed with</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>{{orderDetails.goodsTotal}}</td>
+        <td>{{orderDetails.shipTotal}}</td>
+        <td>{{orderDetails.fee}}</td>
+        <td>{{orderDetails.total}}</td>
+        <td>{{orderDetails.payMethodId.title}}</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    <section id="billingShipping">
+      <div class="row">
+        <div class="col-10">
+          <div class="row">
+            <div class="col-6">
+              <b>Ship to</b> <br>
+              {{orderDetails.shippingAddressId.fullName}} <br>
+              {{orderDetails.shippingAddressId.address}} {{orderDetails.shippingAddressId.streetNo}} <br>
+              {{orderDetails.shippingAddressId.region}} <br>
+              {{orderDetails.shippingAddressId.postCode}} <br>
+              {{orderDetails.shippingAddressId.city}} <br>
+              {{orderDetails.shippingAddressId.countryCode}} <br>
+            </div>
+
+
+            <div class="col-6">
+              <b>Bill to</b> <br>
+              {{orderDetails.billingAddressId.fullName}} {{orderDetails.billingAddressId.surname}} <br>
+              {{orderDetails.billingAddressId.street}} {{orderDetails.billingAddressId.streetNo}} <br>
+              {{orderDetails.billingAddressId.region}} <br>
+              {{orderDetails.billingAddressId.code}} <br>
+              {{orderDetails.billingAddressId.city}} <br>
+              {{orderDetails.billingAddressId.countryCode}} <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="col-8">
+        Items
+      </div>
+    </div>
+
+
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Code</th>
+        <th>Title</th>
+        <th>Manufactuer</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Taxes</th>
+        <th>Status</th>
+        <th>Track Number</th>
+        <th>Last update</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of orderDetails.orderItemsCollection">
+        <td>{{item.productId.code}}</td>
+        <td>{{item.productId.title}}</td>
+        <td>{{item.productId.manufacturerId.title}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.netPrice}}</td>
+        <td>{{item.taxes}}</td>
+        <td>{{item.statusId.title}}</td>
+        <td>{{item.trackingNums}}</td>
+        <td>{{item.statusHistory.slice(-1)[0].createdAt}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

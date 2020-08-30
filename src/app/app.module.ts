@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RulesPayRestrictComponent } from './rules-pay-restrict/rules-pay-restrict.component';
 import { RulesCreatorComponent } from './rules-creator/rules-creator.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RulesCreatorComponent } from './rules-creator/rules-creator.component';
     SidebarComponent,
     DashboardComponent,
     RulesPayRestrictComponent,
-    RulesCreatorComponent
+    RulesCreatorComponent,
+    OrderDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,9 @@ export class CommerceService {
 
   constructor(private http: HttpClient) { }
 
+  public getOrderDetails(): Observable<any>{
+    return this.http.get<any>(environment.api_url + 'api/order/2');
+  }
 
   getProductDetails(): Observable<any> {
     console.log(environment.api_url + 'api/product');

@@ -4,8 +4,14 @@ import { ProductComponent } from './product/product.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {RulesPayRestrictComponent} from './rules-pay-restrict/rules-pay-restrict.component';
 import {RulesCreatorComponent} from './rules-creator/rules-creator.component';
+import {OrderDetailsComponent} from './order-details/order-details.component';
 
-const routes: Routes = [{
+const routes: Routes = [
+  {
+    path: 'order/details',
+    component: OrderDetailsComponent
+  },
+  {
   path: 'product',
   component: ProductComponent
 },
