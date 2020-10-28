@@ -14,6 +14,8 @@ import { BrowseComponent } from './browse/browse.component';
 import { FiltersComponent } from './filters/filters.component';
 import { ProductIconsViewComponent } from './product-icons-view/product-icons-view.component';
 import { ProductThumbnailComponent } from './product-thumbnail/product-thumbnail.component';
+import { SternComponent } from './stern/stern.component';
+import { HalbSternComponent } from './halb-stern/halb-stern.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ProductThumbnailComponent } from './product-thumbnail/product-thumbnail
     BrowseComponent,
     FiltersComponent,
     ProductIconsViewComponent,
-    ProductThumbnailComponent
+    ProductThumbnailComponent,
+    SternComponent,
+    HalbSternComponent
   ],
   imports: [
     BrowserModule,
