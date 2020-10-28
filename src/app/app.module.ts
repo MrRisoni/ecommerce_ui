@@ -13,6 +13,7 @@ import { OrderDetailsComponent } from './order-details/order-details.component';
 import { BrowseComponent } from './browse/browse.component';
 import { FiltersComponent } from './filters/filters.component';
 import { ProductIconsViewComponent } from './product-icons-view/product-icons-view.component';
+import { ProductThumbnailComponent } from './product-thumbnail/product-thumbnail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProductIconsViewComponent } from './product-icons-view/product-icons-vi
     OrderDetailsComponent,
     BrowseComponent,
     FiltersComponent,
-    ProductIconsViewComponent
+    ProductIconsViewComponent,
+    ProductThumbnailComponent
   ],
   imports: [
     BrowserModule,
