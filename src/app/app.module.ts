@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { RulesPayRestrictComponent } from './rules-pay-restrict/rules-pay-restrict.component';
 import { RulesCreatorComponent } from './rules-creator/rules-creator.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
+import { BrowseComponent } from './browse/browse.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { OrderDetailsComponent } from './order-details/order-details.component';
     DashboardComponent,
     RulesPayRestrictComponent,
     RulesCreatorComponent,
-    OrderDetailsComponent
+    OrderDetailsComponent,
+    BrowseComponent
   ],
   imports: [
     BrowserModule,
