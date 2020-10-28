@@ -1,39 +1,23 @@
-#stern {
-    margin: 50px 0;
-    position: relative;
-    display: block;
-    color: red;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
-    border-left: 100px solid transparent;
-    transform: rotate(35deg);
-  }
-  #stern:before {
-    border-bottom: 80px solid red;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
+.stern {
+    font-size: x-large;
+    width: 50px;
+    display: inline-block;
+    color: gray;
+}
+.stern:last-child {
+    margin-right: 0;
+}
+.stern:before {
+    content:'\2605';
+}
+.stern.on {
+    color: gold;
+}
+.stern.half:after {
+    content:'\2605';
+    color: gold;
     position: absolute;
-    height: 0;
-    width: 0;
-    top: -45px;
-    left: -65px;
-    display: block;
-    content: '';
-    transform: rotate(-35deg);
-  }
-  #stern:after {
-    position: absolute;
-    display: block;
-    color: red;
-    top: 3px;
-    left: -105px;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
-    border-left: 100px solid transparent;
-    transform: rotate(-70deg);
-    content: '';
-  }
+    margin-left: -23px;
+    width: 12.5px;
+    overflow: hidden;
+}
