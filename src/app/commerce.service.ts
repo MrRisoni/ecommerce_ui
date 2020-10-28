@@ -35,7 +35,7 @@ export class CommerceService {
   getProductsView(): Observable<any> {
 
     const post_data = {minPrice:10,maxPrice:5000,currentPage:1, perPage:5,
-    orderBy: {orderBy:'best_seller',sortOrder:'asc'}};
+    orderBy: {orderBy:'best_seller',sortOrder:'desc'}};
 
     return this.http.post<any>(environment.api_url + 'api/browse/shop/3/category/6',post_data);
   }

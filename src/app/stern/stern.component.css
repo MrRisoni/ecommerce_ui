@@ -1,6 +1,6 @@
 .stern {
     font-size: x-large;
-    width: 50px;
+    width: 22px;
     display: inline-block;
     color: gray;
 }
@@ -17,7 +17,7 @@
     content:'\2605';
     color: gold;
     position: absolute;
-    margin-left: -23px;
+    margin-left: -22px;
     width: 12.5px;
     overflow: hidden;
 }

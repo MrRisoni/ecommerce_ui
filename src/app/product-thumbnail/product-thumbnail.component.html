@@ -3,6 +3,7 @@
 
 
 {{product.title}}
-{{product.price}}
-{{product.avgRating}}
-<app-stern></app-stern>
+
+
+<p class="price">{{product.price}}</p>
+<app-stern [rating]="product.avgRating"></app-stern>
