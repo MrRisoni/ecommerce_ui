@@ -11,6 +11,8 @@ import { RulesPayRestrictComponent } from './rules-pay-restrict/rules-pay-restri
 import { RulesCreatorComponent } from './rules-creator/rules-creator.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { BrowseComponent } from './browse/browse.component';
+import { FiltersComponent } from './filters/filters.component';
+import { ProductIconsViewComponent } from './product-icons-view/product-icons-view.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { BrowseComponent } from './browse/browse.component';
     RulesPayRestrictComponent,
     RulesCreatorComponent,
     OrderDetailsComponent,
-    BrowseComponent
+    BrowseComponent,
+    FiltersComponent,
+    ProductIconsViewComponent
   ],
   imports: [
     BrowserModule,
